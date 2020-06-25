@@ -11,7 +11,6 @@ jobs:
 
       - run: |	
         mkdir -p ${{ github.workspace }}/testing
-        echo hello > ${{ github.workspace }}/artifact/world.txt
  
       - uses: actions/upload-artifact@v2
         with:
