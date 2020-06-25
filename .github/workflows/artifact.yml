@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: mkdir -p ${{ github.workspace }}/artifact
 
-      - run: cd ${{ github.workspace }}/artifact && touch test.txt
+      - run: mv testing/test.md ${{ github.workspace }}/artifact
 
       - uses: actions/upload-artifact@v2
         with:
