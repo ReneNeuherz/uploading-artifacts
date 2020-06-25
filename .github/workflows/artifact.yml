@@ -11,5 +11,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: testing # or path/to/artifact
+          path: uploading_artifacts/testing # or path/to/artifact
 
