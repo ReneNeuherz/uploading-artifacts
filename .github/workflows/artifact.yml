@@ -11,7 +11,7 @@ jobs:
       - run: pwd
       - run: mkdir -p ${{ github.workspace }}/artifact
 
-      - run: mv testing/test.md ${{ github.workspace }}/artifact
+      - run: mv ${{ github.workspace }}/testing/test.md ${{ github.workspace }}/artifact
 
       - run: pwd
 
