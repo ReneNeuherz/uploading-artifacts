@@ -5,10 +5,11 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    runs-on: ubuntu-latest
     # The type of runner that the job will run on
     steps:
       - uses: actions/upload-artifact@v2
-        run:
+        with:
           name: my-artifact
           path: path/to/artifact/ # or path/to/artifact
 
