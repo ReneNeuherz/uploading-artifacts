@@ -1,6 +1,5 @@
----
-- name: 'Upload a Build Artifact'
-  uses: actions/upload-artifact@v2
-  with:
-    name: 'Test artifact'
-    path: testing
+name: 'Upload a Build Artifact'
+uses: actions/upload-artifact@v2
+with:
+  name: 'Test artifact'
+  path: testing
