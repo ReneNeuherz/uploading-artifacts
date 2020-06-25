@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     # The type of runner that the job will run on
     steps:
-      - run: mkdir -p ${{ github.workspace }}/artifact
+      - run: mkdir -p ${{ github.workspace }}/artifact && touch test.txt
 
       - uses: actions/upload-artifact@v2
         with:
