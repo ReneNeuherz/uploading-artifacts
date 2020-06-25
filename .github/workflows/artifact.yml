@@ -9,7 +9,8 @@ jobs:
     # The type of runner that the job will run on
     steps:
       - uses: actions/upload-artifact@v2
-        run: echo $PATH
         with:
           name: my-artifact
           path: ${{ github.workspace }}/testing
+
+      - run: echo $PATH
