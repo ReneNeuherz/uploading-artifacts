@@ -6,8 +6,9 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    uses: actions/upload-artifact@v2
-    with:
-      name: my-artifact
-      path: path/to/artifact/ # or path/to/artifact
+    steps:
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: path/to/artifact/ # or path/to/artifact
 
