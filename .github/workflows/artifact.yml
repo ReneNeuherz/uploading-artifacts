@@ -13,7 +13,7 @@ jobs:
 
       - run: cd ${{ github.workspace }} && ls -la
 
-      - run: cd /home/runner/work/  && ls -la
+      - run: cd  && ls -la
 
       - uses: actions/upload-artifact@v2
         with:
