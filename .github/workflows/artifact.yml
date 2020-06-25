@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     # The type of runner that the job will run on
     steps:
+
+      - run: |	
+        mkdir -p ${{ github.workspace }}/testing
+        echo hello > ${{ github.workspace }}/artifact/world.txt
+ 
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
