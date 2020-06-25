@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     # The type of runner that the job will run on
     steps:
-      run: echo $PATH
       - uses: actions/upload-artifact@v2
+        run: echo $PATH
         with:
           name: my-artifact
           path: ${{ github.workspace }}/testing
