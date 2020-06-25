@@ -1,5 +1,8 @@
 name: 'Artifact'
 uses: actions/upload-artifact@v2
+on:
+  push:
+    branches: [master]
 with:
   name: 'Test artifact'
   path: /testing
