@@ -8,9 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     # The type of runner that the job will run on
     steps:
+      - run: pwd
       - run: mkdir -p ${{ github.workspace }}/artifact
 
       - run: mv testing/test.md ${{ github.workspace }}/artifact
+
+      - run: pwd
 
       - uses: actions/upload-artifact@v2
         with:
