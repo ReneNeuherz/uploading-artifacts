@@ -13,7 +13,7 @@ jobs:
 
       - run: cd ${{ github.workspace }} && ls -la
 
-      - run: cd  && ls -la
+      - run: env
 
       - uses: actions/upload-artifact@v2
         with:
